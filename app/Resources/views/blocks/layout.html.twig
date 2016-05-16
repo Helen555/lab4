@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+     <div id="all">
+      <div id="top">
+        {% include 'blocks/top.html.twig' %}
+      </div>
+      <div id="other">
+        <div id="leftblock">
+          {% include 'blocks/leftblock.html.twig' %}
+        </div>
+        <div id="rightblock">
+          {% include 'blocks/rightblock.html.twig' %}
+        </div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+      </div>
+    </div>
+{% endblock %}
